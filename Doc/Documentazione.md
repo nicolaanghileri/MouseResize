@@ -5,6 +5,12 @@
 - [Analisi](#analisi)
   - [Analisi del dominio](#analisi-del-dominio)
   - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
+  - [Analisi dei mezzi](#analisi-dei-mezzi)
+    - [Hardware:](#hardware)
+    - [Software:](#software)
+  - [Pianificazione](#pianificazione)
+- [Progettazione](#progettazione)
+  - [Design dell'archiettutra del sistema](#design-dellarchiettutra-del-sistema)
 
 - [Introduzione](#introduzione)
   - [Informazioni sul progetto](#informazioni-sul-progetto)
@@ -13,20 +19,21 @@
 - [Analisi](#analisi)
   - [Analisi del dominio](#analisi-del-dominio)
   - [Analisi e specifica dei requisiti](#analisi-e-specifica-dei-requisiti)
+  - [Analisi dei mezzi](#analisi-dei-mezzi)
+    - [Hardware:](#hardware)
+    - [Software:](#software)
+  - [Pianificazione](#pianificazione)
+- [Progettazione](#progettazione)
+  - [Design dell'archiettutra del sistema](#design-dellarchiettutra-del-sistema)
 
 3. [Progettazione](#progettazione)
-  - [Design delle interfacce](#design-delle-interfacce)
-  	- [Interfaccia principale](#interfaccia-principale)
-	- [Interfaccia vista drone](#interfaccia-vista-drone)
-  - [Design procedurale](#design-procedurale)
-  - [Design di architettura del sistema](#design-di-architettura-del-sistema)
-
+  - [Design dell’architettura del sistema](#design-dell’architettura-del-sistema)
 4. [Implementazione](#implementazione)
 
 5. [Test](#test)
   - [Protocollo di test](#protocollo-di-test)
   - [Risultati test](#risultati-test)
-  - [Mancanze e limitazioni conosciute](#mancanze-e-limitazioni-conosciute)
+  - [Mancanze/limitazioni conosciute](#mancanze-limitazioni-conosciute)
 
 6. [Consuntivo](#consuntivo)
 
@@ -80,6 +87,41 @@ Dalla GUI sarà anche possibile accedere ad una pagina (all'interno della GUI st
 |Req-007|Creazione Blacklist|1|1.0|Visto che alcune applicazioni potrebbero avere già riservato certe combinazioni di tasti, per questo motivo l'utente deve avere la possibilità di aggiungere queste applicazioni all'interno della blacklist, in modo da escluderle le finestre di quei applicativi.|
 |Req-008|Programma portable|1|1.0|Il programma deve essere il più portable possibile e non deve richiedere diritti amministrativi (in questo caso è consentito ignorare finestre aperte con tali diritti).|
 |Req-009|Doc esplicativo|1|1.0|Deve essere creato un documento o una pagina HTML esplicativo. |
+
+## Analisi dei mezzi
+
+### Hardware:
+- iMAC 18,4 Intel Core i5-7360U, 2.30GHz, 16GB RAM, Windows 10 Enterprise.
+- PC Desktop Intel Core i7.6820k, 3.60 GHz, 16GB RAM, Windows 10 Pro
+### Software:
+- Visual Studio Code
+- AutoHotkey (Programming language)
+- AutoIt (Programming language)
+- Virtual Box per macchina virtuale visto che nella scuola arti e mestieri di trevano non si possono scaricare i tool utili per un progetto scolastico.
+
+## Pianificazione
+Per la pianificazione allego il gant iniziale / preventivo:
+
+![Gannt_iniziale](./../Assets/Gannt_iniziale.png)
+
+# Progettazione
+
+La GUI che sarà caricata per questo progetto dovrà presentare diverse features, la prima pagina di setup per la shortcut dovrà dare all'utente la possibilità di cambiare il tasto della tastiera che farà partire il programma, e anche che tasto del mouse verra utilizzato per fare il resize o corrispettivo spostamento della pagina. Tutto questo potrà essere salvato con il tasto "Save setup" oppure resettato con i valori di default con il tasto "Reset setup".
+
+
+![DesignGUI_Setup](./../Assets/SetupGUI.png)
+
+Nella seconda tab della GUI sarà presente la possibilità di aggiungere un programma nella "blacklist", cioè man mano che l'utente utilizzerà questo programma si accorgerà che alcuno programmi hanno già riservato delle shortcut, purtroppo certe di queste andrebbero in conflitto con le nostre messe.
+Una volta che l'utente trova una shortcut bloccata, potrà aprire la GUI ed inserire il programma con il suo tasto riservato. In questo modo la GUI ne terrà conto la prossima volta e avviserà l'utente per tempo. 
+
+![DesignGUI_Blacklist](./../Assets/BlacklistGUI.png)
+
+## Design dell'archiettutra del sistema
+
+
+
+
+
 
 
 
