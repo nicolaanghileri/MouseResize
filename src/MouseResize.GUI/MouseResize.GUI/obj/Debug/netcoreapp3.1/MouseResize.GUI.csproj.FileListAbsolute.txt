@@ -1,0 +1,16 @@
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\bin\Debug\netcoreapp3.1\MouseResize.GUI.exe
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\bin\Debug\netcoreapp3.1\MouseResize.GUI.deps.json
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\bin\Debug\netcoreapp3.1\MouseResize.GUI.runtimeconfig.json
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\bin\Debug\netcoreapp3.1\MouseResize.GUI.runtimeconfig.dev.json
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\bin\Debug\netcoreapp3.1\MouseResize.GUI.dll
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\bin\Debug\netcoreapp3.1\MouseResize.GUI.pdb
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.csproj.AssemblyReference.cache
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.Form1.resources
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.csproj.GenerateResource.cache
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.GeneratedMSBuildEditorConfig.editorconfig
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.AssemblyInfoInputs.cache
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.AssemblyInfo.cs
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.csproj.CoreCompileInputs.cache
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.dll
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.pdb
+D:\306\MouseResize\src\MouseResize.GUI\MouseResize.GUI\obj\Debug\netcoreapp3.1\MouseResize.GUI.genruntimeconfig.cache
