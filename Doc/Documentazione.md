@@ -102,7 +102,7 @@ Dalla GUI sarà anche possibile accedere ad una pagina (all'interno della GUI st
 ## Pianificazione
 Per la pianificazione allego il gant iniziale / preventivo:
 
-![Gannt_iniziale](../Assets/Gannt_iniziale.PNG)
+![Gannt_iniziale](./../Assets/Gannt_iniziale.PNG)
 
 # Progettazione
 
