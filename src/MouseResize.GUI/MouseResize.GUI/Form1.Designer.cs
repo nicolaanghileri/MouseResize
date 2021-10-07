@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace MouseResize.GUI
 {
     partial class Form1
@@ -31,18 +33,26 @@ namespace MouseResize.GUI
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbProgram = new System.Windows.Forms.ListBox();
+            this.cbKeyboard = new System.Windows.Forms.ComboBox();
+            this.cbMouse = new System.Windows.Forms.ComboBox();
+            this.bSave = new System.Windows.Forms.Button();
+            this.bReset = new System.Windows.Forms.Button();
+            this.tbProgramm = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.bAddProgram = new System.Windows.Forms.Button();
+            this.lbCombination = new System.Windows.Forms.ListBox();
+            this.tbCombination = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 21);
+            this.label1.Location = new System.Drawing.Point(25, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 20);
             this.label1.TabIndex = 0;
@@ -53,25 +63,18 @@ namespace MouseResize.GUI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(520, 21);
+            this.label2.Location = new System.Drawing.Point(25, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Blacklist";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(171, 104);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 23);
-            this.textBox1.TabIndex = 2;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(12, 107);
+            this.label3.Location = new System.Drawing.Point(63, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 3;
@@ -82,28 +85,109 @@ namespace MouseResize.GUI
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(12, 202);
+            this.label4.Location = new System.Drawing.Point(418, 78);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(131, 20);
             this.label4.TabIndex = 4;
             this.label4.Text = "Insert Mouse Key";
             // 
-            // textBox2
+            // lbProgram
             // 
-            this.textBox2.Location = new System.Drawing.Point(171, 203);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 23);
-            this.textBox2.TabIndex = 5;
+            this.lbProgram.FormattingEnabled = true;
+            this.lbProgram.ItemHeight = 15;
+            this.lbProgram.Location = new System.Drawing.Point(63, 216);
+            this.lbProgram.Name = "lbProgram";
+            this.lbProgram.Size = new System.Drawing.Size(52, 184);
+            this.lbProgram.TabIndex = 6;
+            this.lbProgram.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // listBox1
+            // cbKeyboard
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(520, 67);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(229, 349);
-            this.listBox1.TabIndex = 6;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.cbKeyboard.FormattingEnabled = true;
+            this.cbKeyboard.Location = new System.Drawing.Point(179, 79);
+            this.cbKeyboard.Name = "cbKeyboard";
+            this.cbKeyboard.Size = new System.Drawing.Size(157, 23);
+            this.cbKeyboard.TabIndex = 7;
+            this.cbKeyboard.SelectedIndexChanged += new System.EventHandler(this.cbKeyboard_SelectedIndexChanged);
+            // 
+            // cbMouse
+            // 
+            this.cbMouse.FormattingEnabled = true;
+            this.cbMouse.Location = new System.Drawing.Point(578, 75);
+            this.cbMouse.Name = "cbMouse";
+            this.cbMouse.Size = new System.Drawing.Size(157, 23);
+            this.cbMouse.TabIndex = 8;
+            // 
+            // bSave
+            // 
+            this.bSave.Location = new System.Drawing.Point(605, 295);
+            this.bSave.Name = "bSave";
+            this.bSave.Size = new System.Drawing.Size(130, 35);
+            this.bSave.TabIndex = 9;
+            this.bSave.Text = "Save Changes";
+            this.bSave.UseVisualStyleBackColor = true;
+            // 
+            // bReset
+            // 
+            this.bReset.Location = new System.Drawing.Point(605, 350);
+            this.bReset.Name = "bReset";
+            this.bReset.Size = new System.Drawing.Size(130, 35);
+            this.bReset.TabIndex = 10;
+            this.bReset.Text = "Reset Changes";
+            this.bReset.UseVisualStyleBackColor = false;
+            // 
+            // tbProgramm
+            // 
+            this.tbProgramm.Location = new System.Drawing.Point(235, 250);
+            this.tbProgramm.Name = "tbProgramm";
+            this.tbProgramm.Size = new System.Drawing.Size(146, 23);
+            this.tbProgramm.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(252, 216);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(116, 20);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Program Name";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(249, 286);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(129, 20);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Key Combination";
+            // 
+            // bAddProgram
+            // 
+            this.bAddProgram.Location = new System.Drawing.Point(265, 365);
+            this.bAddProgram.Name = "bAddProgram";
+            this.bAddProgram.Size = new System.Drawing.Size(89, 35);
+            this.bAddProgram.TabIndex = 15;
+            this.bAddProgram.Text = "Add Program";
+            this.bAddProgram.UseVisualStyleBackColor = true;
+            // 
+            // lbCombination
+            // 
+            this.lbCombination.FormattingEnabled = true;
+            this.lbCombination.ItemHeight = 15;
+            this.lbCombination.Location = new System.Drawing.Point(149, 216);
+            this.lbCombination.Name = "lbCombination";
+            this.lbCombination.Size = new System.Drawing.Size(52, 184);
+            this.lbCombination.TabIndex = 16;
+            // 
+            // tbCombination
+            // 
+            this.tbCombination.Location = new System.Drawing.Point(235, 326);
+            this.tbCombination.Name = "tbCombination";
+            this.tbCombination.Size = new System.Drawing.Size(146, 23);
+            this.tbCombination.TabIndex = 17;
             // 
             // Form1
             // 
@@ -111,11 +195,19 @@ namespace MouseResize.GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbCombination);
+            this.Controls.Add(this.lbCombination);
+            this.Controls.Add(this.bAddProgram);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tbProgramm);
+            this.Controls.Add(this.bReset);
+            this.Controls.Add(this.bSave);
+            this.Controls.Add(this.cbMouse);
+            this.Controls.Add(this.cbKeyboard);
+            this.Controls.Add(this.lbProgram);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(171)))), ((int)(((byte)(52)))));
@@ -127,15 +219,28 @@ namespace MouseResize.GUI
 
         }
 
+        private void label5_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbProgram;
+        private System.Windows.Forms.ComboBox cbKeyboard;
+        private System.Windows.Forms.ComboBox cbMouse;
+        private System.Windows.Forms.Button bSave;
+        private System.Windows.Forms.Button bReset;
+        private System.Windows.Forms.TextBox tbProgramm;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button bAddProgram;
+        private System.Windows.Forms.ListBox lbCombination;
+        private System.Windows.Forms.TextBox tbCombination;
     }
 }
 
