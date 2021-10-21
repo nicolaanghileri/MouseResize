@@ -117,15 +117,3 @@ Una volta che l'utente trova una shortcut bloccata, potrà aprire la GUI ed inse
 ![DesignGUI_Blacklist](./../Assets/BlacklistGUI.png)
 
 ## Design dell'archiettutra del sistema
-
-
-
-
-
-
-
-
-
-
-
-
