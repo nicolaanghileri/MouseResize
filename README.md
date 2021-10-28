@@ -15,6 +15,9 @@ Gestore ridimensionamento e posizionamento finestre
 - [07.10.2021](./Diari/2021-10-07_MouseResize.md)
 - [14.10.2021](./Diari/2021-10-14_MouseResize.md)
 - [21.10.2021](./Diari/2021-10-21_MouseResize.md)
+- [28.10.2021](./Diari/2021-10-28_MouseResize.md)
+
+
 
 
 
