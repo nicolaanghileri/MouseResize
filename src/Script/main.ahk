@@ -20,42 +20,41 @@ combiShift = %shiftKey% & %shiftMou%
 
 Hotkey, %combiResize% , ResizeWindow, On
 ;Hotkey, %combiShift% ,  ShiftWindow
+
+;After this command the labels will not auto-execute
 RETURN ;
 
-
-ResizeWindow:
-        MouseGetPos , X, Y, Win, Cont, 
-        WinGetTitle, WindowTitle, ahk_id %Win%
-        WinGetPos , XWin, YWin,,, %WindowTitle%,
-        CoordMode, Mouse, Screen
-
-        WinX = %XWin%
-        WinY = %YWin%
-        MouseX = %X%
-        MouseY = %Y%
-        ;ToolTip, %WindowTitle%
-        Loop{
-            if (GetKeyState(resKey, "P") And GetKeyState(resMou, "P")){
-            ;ToolTip, Debug %resKey% and pressed
-            MsgBox, %WindowTitle%
+Shift:
+    MouseGetPos , X, Y, Win, Cont, 
+    WinGetTitle, WindowTitle, ahk_id %Win%
+    WinGetPos , XWin, YWin,,, %WindowTitle%,
+    CoordMode, Mouse, Screen
+    WinX = %XWin%
+    WinY = %YWin%
+    MouseX = %X%
+    MouseY = %Y%
+    ;MsgBox, %WindowTitle%
+    Loop{
+        if (GetKeyState(resKey, "P") And GetKeyState(resMou, "P")){            
             MouseGetPos , Xn, Yn,
-            ;ToolTip, %Xn% + %Yn% 
-            ToolTip, %WindowTitle%
+            ToolTip, %Xn% + %Yn% 
             spostX := Xn - MouseX
             spostY := Yn - MouseY
-            ;WinMove, %WindowTitle% , , WinX + spostX,WinY + spostY ,
+            WinMove, %WindowTitle% , , WinX + spostX,WinY + spostY ,
             MouseX := Xn
             MouseY := Yn
-            WinGetPos, XWin, YWin,,, %WindowTitle%,
+            WinGetPos , XWin, YWin,,, %WindowTitle%,
             WinX := XWin
             WinY := YWin
-
-            }else{
-            ToolTip, Debug %resKey% alone
+        }else{
+            ToolTip,
             Break
-            }
-        }
-        
+        }  
+    }
+Return
+
+ResizeWindow:
+    Gosub, Shift
     Goto, ResizeWindow
 
 ShiftWindow:
