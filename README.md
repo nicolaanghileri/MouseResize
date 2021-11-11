@@ -1,5 +1,5 @@
 # MouseResize
-Gestore ridimensionamento e posizionamento finestre
+Gestore ridimensionamento e posizionamento finestre:
 
 ## Info:
 - author: Nicola Anghileri
@@ -16,6 +16,8 @@ Gestore ridimensionamento e posizionamento finestre
 - [14.10.2021](./Diari/2021-10-14_MouseResize.md)
 - [21.10.2021](./Diari/2021-10-21_MouseResize.md)
 - [28.10.2021](./Diari/2021-10-28_MouseResize.md)
+- [11.11.2021](./Diari/2021-11-11_MouseResize.md)
+- 
 
 
 
