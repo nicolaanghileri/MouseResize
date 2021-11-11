@@ -1,6 +1,6 @@
 ﻿#SingleInstance, Force
 ;author Nicola Anghileri
-;version 07.10.2021 last changes: 28.10.2021
+;version 07.10.2021 last changes: 11.11.2021
 
 ;Reads the infos for resize hotkey in config.ini
 IniRead, resKeyboard, config.ini, Keys, ResizeKeyboard,
@@ -33,7 +33,6 @@ Shift:
     WinY = %YWin%
     MouseX = %X%
     MouseY = %Y%
-    ;MsgBox, %WindowTitle%
     Loop{
         if (GetKeyState(resKey, "P") And GetKeyState(resMou, "P")){            
             MouseGetPos , Xn, Yn,
@@ -56,6 +55,7 @@ Return
 ResizeWindow:
     Gosub, Shift
     Goto, ResizeWindow
+    
 
 ShiftWindow:
     MsgBox, WindowShift
