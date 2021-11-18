@@ -1,0 +1,37 @@
+Blocchi virtuali : 4
+
+1: 
+    if((valX > XWin AND valX < x + Width/2) AND (valY < Y AND valY > Y - Height/2))
+3:
+    if((valX > XWin AND valX < x + Width/2) AND (valY < Y - Height/2 AND valY > Y - Height))
+2:   
+    if((valX > X + Width/2 AND valX < X + Width) AND (valY < Y AND valY > Y - Height/2))
+4:
+    if((valX > X + Width/2 AND valX < X + Width) AND (valY < Y - Height/2 AND valY > Y - Height))
+--------------------------------------------------------------------------------------------------------
+if((valX > XWin AND valX < x + Width/2)){
+    if((valY < Y AND valY > Y - Height/2)){
+        1
+    }else if((valY < Y - Height/2 AND valY > Y - Height))
+        3
+    }
+}else if((valX > X + Width/2 AND valX < X + Width)){
+    if((valY < Y AND valY > Y - Height/2)){
+        2
+    }else if((valY < Y - Height/2 AND valY > Y - Height))
+        4
+    }
+}
+
+
+getBlock(xMouse, YMouse);
+
+switch(getBlock(xMouse, YMouse)){
+    case 1:
+    
+    case 2:
+
+    case 3:
+
+    case4:
+}
