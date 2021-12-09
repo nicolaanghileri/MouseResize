@@ -3,9 +3,9 @@
     
     enum MouseKey
     {
-        Left,
-        Center,
-        Right
+        RButton,
+        LButton,
+        MButton
     }
 
     

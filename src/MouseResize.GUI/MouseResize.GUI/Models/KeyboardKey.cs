@@ -3,9 +3,15 @@
     
     enum KeyboardKey
     {
-        Shift,
-        CtrlRight,
-        CtrlLeft,
-        Alt
+        LControl,
+        RControl,
+        CapsLock,
+        Space,
+        Tab,
+        Enter,
+        Return,
+        Esc,
+        Backspace
+
     }
 }

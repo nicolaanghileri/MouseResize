@@ -1,33 +1,56 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.IO;
+using System.Reflection;
+using System.Runtime.InteropServices;
+using System.Text;
+
 namespace MouseResize.GUI.Models
 {
+
+    //Copyright Danny Beckett, dxiv: https://stackoverflow.com/questions/217902/reading-writing-an-ini-file
+    //Consulted last at: 09.12.2021
     public class IniFile
     {
-        #region Constraints
+        string Path;
+        string EXE = Assembly.GetExecutingAssembly().GetName().Name;
 
+        [DllImport("kernel32", CharSet = CharSet.Unicode)]
+        static extern long WritePrivateProfileString(string Section, string Key, string Value, string FilePath);
 
-        #endregion
+        [DllImport("kernel32", CharSet = CharSet.Unicode)]
+        static extern int GetPrivateProfileString(string Section, string Key, string Default, StringBuilder RetVal, int Size, string FilePath);
 
-        #region  Members and Properties
+        public IniFile(string IniPath = null)
+        {
+            Path = new FileInfo(IniPath ?? EXE + ".ini").FullName;
+        }
 
-        
+        public string Read(string Key, string Section = null)
+        {
+            var RetVal = new StringBuilder(255);
+            GetPrivateProfileString(Section ?? EXE, Key, "", RetVal, 255, Path);
+            return RetVal.ToString();
+        }
 
-        #endregion
+        public void Write(string Key, string Value, string Section = null)
+        {
+            WritePrivateProfileString(Section ?? EXE, Key, Value, Path);
+        }
 
-        #region Constructors
+        public void DeleteKey(string Key, string Section = null)
+        {
+            Write(Key, null, Section ?? EXE);
+        }
 
-        
+        public void DeleteSection(string Section = null)
+        {
+            Write(null, null, Section ?? EXE);
+        }
 
-        #endregion
-
-        #region Helper Functions
-        #endregion
-
-        #region  Functions 
-        #endregion
-
+        public bool KeyExists(string Key, string Section = null)
+        {
+            return Read(Key, Section).Length > 0;
+        }
     }
 }

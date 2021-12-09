@@ -3,7 +3,7 @@ Gestore ridimensionamento e posizionamento finestre:
 
 ## Info:
 - author: Nicola Anghileri
-- version: 09.09.2021
+- version: 09.09.2021 modified: 09.12.2021
 - end: 23.12.2021
 
 ## Documentazione
@@ -19,6 +19,8 @@ Gestore ridimensionamento e posizionamento finestre:
 - [28.10.2021](./Diari/2021-10-28_MouseResize.md)
 - [11.11.2021](./Diari/2021-11-11_MouseResize.md)
 - [18.11.2021](./Diari/2021-11-18_MouseResize.md)
+- [25.11.2021](./Diari/2021-11-25_MouseResize.md)
+- [09.12.2021](./Diari/2021-12-09_MouseResize.md)
 
 
 

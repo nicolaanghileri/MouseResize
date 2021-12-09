@@ -86,7 +86,7 @@ Dalla GUI sarà anche possibile accedere ad una pagina (all'interno della GUI st
 |Req-006|Icona Tray|1|1.0|L'applicativo deve avere una sua icona visibile nella Tray, dalla quale si devono poter effettuare questi comandi: chiusura, sospensione/ripristino, apertura della configurazione (GUI o file).|
 |Req-007|Creazione Blacklist|1|1.0|Visto che alcune applicazioni potrebbero avere già riservato certe combinazioni di tasti, per questo motivo l'utente deve avere la possibilità di aggiungere queste applicazioni all'interno della blacklist, in modo da escluderle le finestre di quei applicativi.|
 |Req-008|Programma portable|1|1.0|Il programma deve essere il più portable possibile e non deve richiedere diritti amministrativi (in questo caso è consentito ignorare finestre aperte con tali diritti).|
-|Req-009|Doc esplicativo|1|1.0|Deve essere creato un documento o una pagina HTML esplicativo. |
+|Req-009|Doc esplicativo|3|1.0|Deve essere creato un documento o una pagina HTML esplicativo. |
 
 ## Analisi dei mezzi
 
@@ -96,7 +96,6 @@ Dalla GUI sarà anche possibile accedere ad una pagina (all'interno della GUI st
 ### Software:
 - Visual Studio Code
 - AutoHotkey (Programming language)
-- AutoIt (Programming language)
 - Virtual Box per macchina virtuale visto che nella scuola arti e mestieri di trevano non si possono scaricare i tool utili per un progetto scolastico.
 
 ## Pianificazione
