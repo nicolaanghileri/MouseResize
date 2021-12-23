@@ -66,7 +66,7 @@ namespace MouseResize.GUI
         private void bApply_Click(object sender, EventArgs e)
         {
             //Using class IniFile to create or override ini file
-            var MyIni = new IniFile("configgg.ini");
+            var MyIni = new IniFile("config.ini");
 
             //Readed values
             MyIni.Write("ResizeKeyboard", cbKeyResize.Text, "Keys");
@@ -108,7 +108,7 @@ namespace MouseResize.GUI
 
 
 
-        //Useless Click
+        //Useless Clicks
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -125,6 +125,11 @@ namespace MouseResize.GUI
         }
 
         private void cbKeyboard_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
         {
 
         }

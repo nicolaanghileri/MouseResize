@@ -1,3 +1,0 @@
-LButton::
-
-ToolTip, a

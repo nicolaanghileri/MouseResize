@@ -32,7 +32,6 @@ namespace MouseResize.GUI
             }
         }
 
-        readonly GUIForm gui;
         private void button1_Click(object sender, EventArgs e)
         {
             string listItem = tbProgram.Text + " " + cbKey.Text + " " + cbMouse.Text;

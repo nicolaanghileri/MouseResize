@@ -43,6 +43,7 @@ namespace MouseResize.GUI
             this.bReset = new System.Windows.Forms.Button();
             this.bAdd = new System.Windows.Forms.Button();
             this.bDelete = new System.Windows.Forms.Button();
+            this.label = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbMouseMove
@@ -157,12 +158,24 @@ namespace MouseResize.GUI
             this.bDelete.UseVisualStyleBackColor = true;
             this.bDelete.Click += new System.EventHandler(this.bDelete_Click);
             // 
+            // label
+            // 
+            this.label.AutoSize = true;
+            this.label.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label.Location = new System.Drawing.Point(111, 118);
+            this.label.Name = "label";
+            this.label.Size = new System.Drawing.Size(67, 20);
+            this.label.TabIndex = 19;
+            this.label.Text = "Blacklist";
+            this.label.Click += new System.EventHandler(this.label2_Click_1);
+            // 
             // GUIForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label);
             this.Controls.Add(this.bDelete);
             this.Controls.Add(this.bAdd);
             this.Controls.Add(this.bReset);
@@ -203,6 +216,7 @@ namespace MouseResize.GUI
         private System.Windows.Forms.Button bReset;
         private System.Windows.Forms.Button bAdd;
         private System.Windows.Forms.Button bDelete;
+        private System.Windows.Forms.Label label;
     }
 }
 
