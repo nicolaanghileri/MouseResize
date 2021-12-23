@@ -22,6 +22,15 @@ Gestore ridimensionamento e posizionamento finestre:
 - [25.11.2021](./Diari/2021-11-25_MouseResize.md)
 - [09.12.2021](./Diari/2021-12-09_MouseResize.md)
 
+## INFO IMPORTANTE
+Cartella da guardare per utilizzare il programma: MouseResize\src\MouseResize.GUI\MouseResize.GUI\bin\Debug\netcoreapp3.1
+
+File importanti:
+- main.ahk
+- help.chm
+- MouseResize.GUI.exe
+
+
 
 
 
