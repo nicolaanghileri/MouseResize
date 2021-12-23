@@ -37,6 +37,9 @@ flag := -1
 ;After this command the labels will not auto-execute
 RETURN ;
 
+gui:
+    Run, MouseResize.GUI.exe
+
 ;Label Main contains all the statments for shifting and resizing.
 Main:
     ;Collecting all important infos for resizing and/or shifting, Current x,y positionn of the current screen and mouse,
@@ -136,8 +139,7 @@ getSector(X,Y,WinX, WinY,WinWidth,WinHeight)
     return %S%
 }
 
-gui:
-    Run, MouseResize.GUI.exe
+
 
 
 
